@@ -122,18 +122,16 @@ export default function Gallery() {
           layout
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          <AnimatePresence mode="popLayout">
-            {filteredItems.map((item) => (
-              <motion.div
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4 }}
-                key={item.id}
-                onClick={() => setSelectedItem(item)}
-                className="group relative cursor-pointer aspect-[4/5] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-black"
-              >
+          {filteredItems.map((item) => (
+            <motion.div
+              layout
+              initial={false}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              key={item.id}
+              onClick={() => setSelectedItem(item)}
+              className="group relative cursor-pointer aspect-[4/5] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 bg-black"
+            >
                 {/* Image */}
                 <img
                   src={item.image}
@@ -159,7 +157,6 @@ export default function Gallery() {
                 </div>
               </motion.div>
             ))}
-          </AnimatePresence>
         </motion.div>
 
         {filteredItems.length === 0 && (

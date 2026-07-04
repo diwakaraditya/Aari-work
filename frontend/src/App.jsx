@@ -1,33 +1,19 @@
 import React, { lazy, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
+import Gallery from './pages/Gallery';
+import { preloadAllRoutes } from './utils/routePreloads';
 
 // Lazy loading pages for initial bundle split
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
-const Gallery = lazy(() => import('./pages/Gallery'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
 
-// Silently preload all route modules after the first page is interactive.
-// This ensures modules are already cached when the user navigates,
-// eliminating the Suspense delay that conflicts with AnimatePresence mode="wait".
+// Preload route chunks right after mount so first navigation never suspends.
 function RoutePreloader() {
   useEffect(() => {
-    const preload = () => {
-      import('./pages/About');
-      import('./pages/Gallery');
-      import('./pages/Services');
-      import('./pages/Contact');
-    };
-    // Use idle time so it doesn't compete with the initial render
-    if (typeof requestIdleCallback !== 'undefined') {
-      const id = requestIdleCallback(preload, { timeout: 2000 });
-      return () => cancelIdleCallback(id);
-    } else {
-      const id = setTimeout(preload, 1500);
-      return () => clearTimeout(id);
-    }
+    preloadAllRoutes();
   }, []);
   return null;
 }
