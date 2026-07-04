@@ -107,3 +107,16 @@ body {
 .silk-shine:hover::after {
   transform: translate(50%, 50%) rotate(45deg);
 }
+
+@keyframes pageEnter {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 0.3s ease-out;
+}

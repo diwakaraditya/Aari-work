@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon, Sparkles } from 'lucide-react';
 import useDarkMode from '../hooks/useDarkMode';
+import { preloadRoute } from '../utils/routePreloads';
 
 const navigationLinks = [
   { name: 'Home', path: '/' },
@@ -69,6 +70,8 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
+                  onMouseEnter={() => preloadRoute(link.path)}
+                  onFocus={() => preloadRoute(link.path)}
                   className="relative py-2 text-sm font-medium tracking-wide uppercase group text-text-light dark:text-text-dark"
                 >
                   <span
@@ -141,6 +144,8 @@ export default function Navbar() {
                   <Link
                     key={link.name}
                     to={link.path}
+                    onMouseEnter={() => preloadRoute(link.path)}
+                    onFocus={() => preloadRoute(link.path)}
                     className={`block px-4 py-3 rounded-xl text-sm font-medium tracking-wide uppercase transition-all duration-200 ${
                       isActive
                         ? 'bg-primary text-white dark:bg-secondary dark:text-bg-dark font-semibold'
