@@ -47,26 +47,26 @@ export default function MainLayout() {
 
       {/* Main page content wrapped in Framer Motion Page Transition */}
       <main className="flex-grow pt-[80px] md:pt-[90px]">
-        <AnimatePresence>
-          <motion.div
-            key={location.key}
-            variants={pageVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="w-full"
-          >
-            <Suspense
-              fallback={
-                <div className="min-h-[60vh] flex items-center justify-center">
-                  <Spinner />
-                </div>
-              }
+        <Suspense
+          fallback={
+            <div className="min-h-[60vh] flex items-center justify-center">
+              <Spinner />
+            </div>
+          }
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={location.pathname}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full"
             >
               <Outlet />
-            </Suspense>
-          </motion.div>
-        </AnimatePresence>
+            </motion.div>
+          </AnimatePresence>
+        </Suspense>
       </main>
 
       {/* Interactive Floaters */}
