@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShieldCheck, Award, Heart, Leaf, Users, MapPin, Sparkles } from 'lucide-react';
+import { ShieldCheck, Award, Heart, Leaf, Users, MapPin, Sparkles, CheckCircle } from 'lucide-react';
 import { artisanInfo } from '../data/websiteData';
 
 const sectionVariants = {

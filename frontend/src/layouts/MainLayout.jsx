@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
+import { Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -6,6 +7,7 @@ import ScrollProgressBar from '../components/ScrollProgressBar';
 import BackToTopButton from '../components/BackToTopButton';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollToTop from '../components/ScrollToTop';
+import Spinner from '../components/Spinner';
 
 const pageVariants = {
   initial: {
@@ -45,16 +47,24 @@ export default function MainLayout() {
 
       {/* Main page content wrapped in Framer Motion Page Transition */}
       <main className="flex-grow pt-[80px] md:pt-[90px]">
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           <motion.div
-            key={location.pathname}
+            key={location.key}
             variants={pageVariants}
             initial="initial"
             animate="animate"
             exit="exit"
             className="w-full"
           >
-            <Outlet />
+            <Suspense
+              fallback={
+                <div className="min-h-[60vh] flex items-center justify-center">
+                  <Spinner />
+                </div>
+              }
+            >
+              <Outlet />
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>
