@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Star, ShieldCheck, Clock, CheckCircle, Award } from 'lucide-react';
-import { categories, reviews, galleryItems, artisanInfo } from '../data/websiteData';
+import { ArrowRight, Sparkles, Star, ShieldCheck, Clock, CheckCircle, Award, Instagram } from 'lucide-react';
+import { categories, reviews, galleryItems, artisanInfo, instagramGallery } from '../data/websiteData';
 
 // Stagger animation container config for cards
 const containerVariants = {
@@ -31,8 +31,8 @@ export default function Home() {
   const featuredDesigns = galleryItems.slice(0, 3);
 
   // Phone and message setup
-  const phoneNumber = '919876543210';
-  const customMessage = encodeURIComponent("Hi Aari Aaradhya, I'd like to book a custom embroidery consultation.");
+  const phoneNumber = '919527505630';
+  const customMessage = encodeURIComponent("Hello, I'm interested in your Aari Work designs.");
 
   return (
     <div className="overflow-hidden">
@@ -271,15 +271,15 @@ export default function Home() {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-secondary shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
-                  alt="Aadhya Sharma Working on tambour frames"
+                  alt="Dhanashree Pawar working on tambour embroidery frames"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/5" />
               </div>
               {/* Overlapping badge */}
               <div className="absolute -bottom-6 -left-6 bg-primary dark:bg-secondary text-white dark:text-bg-dark p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center">
-                <span className="text-3xl font-serif font-black">{artisanInfo.experience}</span>
-                <span className="text-[10px] font-sans uppercase font-bold tracking-wider mt-1">Experience</span>
+                <span className="text-xl font-serif font-black">Boutique</span>
+                <span className="text-[10px] font-sans uppercase font-bold tracking-wider mt-1">Aari Studio</span>
               </div>
             </div>
 
@@ -297,12 +297,12 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-6 pt-4">
                 <div className="border-l-4 border-secondary pl-4">
-                  <h4 className="text-2xl font-serif font-black text-primary dark:text-secondary">{artisanInfo.happyClients}</h4>
-                  <p className="text-xs text-muted-light dark:text-muted-dark font-sans font-light mt-1">Happy Brides</p>
+                  <h4 className="text-lg font-serif font-black text-primary dark:text-secondary">Bridal Specialist</h4>
+                  <p className="text-xs text-muted-light dark:text-muted-dark font-sans font-light mt-1">Dedicated exclusively to bridal artistry</p>
                 </div>
                 <div className="border-l-4 border-secondary pl-4">
-                  <h4 className="text-2xl font-serif font-black text-primary dark:text-secondary">{artisanInfo.designsCreated}</h4>
-                  <p className="text-xs text-muted-light dark:text-muted-dark font-sans font-light mt-1">Embroidery Swatches</p>
+                  <h4 className="text-lg font-serif font-black text-primary dark:text-secondary">Custom Designs</h4>
+                  <p className="text-xs text-muted-light dark:text-muted-dark font-sans font-light mt-1">Personalized for every bride</p>
                 </div>
               </div>
 
@@ -359,6 +359,77 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Instagram Showcase */}
+      <section className="py-20 bg-bg-light dark:bg-bg-dark transition-colors duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/30 bg-secondary/5 text-secondary mb-4">
+                <Instagram className="w-4 h-4" />
+                <span className="text-xs uppercase tracking-widest font-semibold font-sans">Follow Us on Instagram</span>
+              </div>
+              <h2 className="font-serif font-black text-3xl md:text-5xl text-primary dark:text-secondary">
+                @amruta_aari_creation_
+              </h2>
+              <div className="w-16 h-1 bg-secondary mx-auto mt-4" />
+              <p className="mt-4 max-w-xl mx-auto text-muted-light dark:text-muted-dark font-sans text-sm">
+                Browse our latest creations, behind-the-scenes craftsmanship, and bridal transformations on Instagram.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Instagram Gallery Grid */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10"
+          >
+            {instagramGallery.map((img) => (
+              <motion.a
+                key={img.id}
+                variants={itemVariants}
+                href="https://www.instagram.com/amruta_aari_creation_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group aspect-square rounded-2xl overflow-hidden bg-black shadow-sm hover:shadow-xl transition-shadow duration-500"
+              >
+                <img
+                  src={img.url}
+                  alt={`Amruta's Aari Creation - Instagram Post ${img.id}`}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-center justify-center">
+                  <div className="p-3 rounded-full bg-white/20 backdrop-blur-sm">
+                    <Instagram className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+              </motion.a>
+            ))}
+          </motion.div>
+
+          {/* Instagram CTA Button */}
+          <div className="text-center">
+            <a
+              href="https://www.instagram.com/amruta_aari_creation_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white font-semibold text-sm tracking-wide uppercase shadow-lg hover:opacity-90 transition-opacity duration-300"
+            >
+              <Instagram className="w-5 h-5" />
+              Follow Us on Instagram
+            </a>
           </div>
         </div>
       </section>

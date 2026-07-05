@@ -56,8 +56,8 @@ export default function Gallery() {
 
   // Compose custom WhatsApp text for inquiry
   const getWhatsAppInquiryUrl = (item) => {
-    const phone = '919876543210';
-    const text = encodeURIComponent(`Hi Aari Aaradhya, I am interested in inquiring about the design: "${item.title}" (ID: ${item.id}). Could you provide pricing and booking slot details?`);
+    const phone = '919527505630';
+    const text = encodeURIComponent(`Hello, I'm interested in your Aari Work designs. Specifically: "${item.title}". Could you provide pricing and booking details?`);
     return `https://wa.me/${phone}?text=${text}`;
   };
 

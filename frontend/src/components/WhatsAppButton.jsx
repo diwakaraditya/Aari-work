@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { MessageSquarePlus } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const phoneNumber = '919876543210'; // Demo number
-  const message = encodeURIComponent("Hi! I would like to inquire about your Aari & Maggam embroidery designs and custom stitching services.");
+  const phoneNumber = '919527505630';
+  const message = encodeURIComponent("Hello, I'm interested in your Aari Work designs.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (

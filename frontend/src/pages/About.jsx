@@ -58,18 +58,18 @@ export default function About() {
                 />
               </div>
               <div className="rounded-2xl p-6 bg-primary/5 dark:bg-secondary/5 text-center flex flex-col justify-center">
-                <span className="text-3xl font-serif font-black text-primary dark:text-secondary">2014</span>
+                <span className="text-2xl font-serif font-black text-primary dark:text-secondary">Hadapsar</span>
                 <span className="text-xs text-muted-light dark:text-muted-dark font-sans uppercase font-bold tracking-wide mt-1">
-                  Est. Year
+                  Pune, Maharashtra
                 </span>
               </div>
             </div>
             
             <div className="space-y-4 pt-8">
               <div className="rounded-2xl p-6 bg-secondary/15 text-center flex flex-col justify-center">
-                <span className="text-3xl font-serif font-black text-primary dark:text-secondary-dark">4000+</span>
+                <span className="text-2xl font-serif font-black text-primary dark:text-secondary-dark">Bridal</span>
                 <span className="text-xs text-muted-light dark:text-muted-dark font-sans uppercase font-bold tracking-wide mt-1">
-                  Custom Fits
+                  Specialization
                 </span>
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[4/5] border border-secondary/25 shadow-sm">
@@ -88,14 +88,14 @@ export default function About() {
               The Genesis
             </span>
             <h2 className="font-serif font-black text-3xl md:text-5xl text-primary dark:text-secondary leading-tight">
-              Honoring Traditional Handlooms & Tambour Needles
+              Honoring Traditional Handlooms &amp; Tambour Needles
             </h2>
             <div className="w-12 h-1 bg-secondary" />
             <p className="text-sm text-muted-light dark:text-muted-dark leading-relaxed font-sans font-light">
-              Aari Aaradhya commenced as a cozy two-hand embroidery workspace in Hyderabad, born with the simple goal of safeguarding the dying heritage of heavy Maggam work. Unlike factory machines that spit cookie-cutter plastic duplicates, classic tambour needlework utilizes a slender hooked needle to pull loops of threads, beads, and gold wires individually.
+              Amruta's Aari Creation is a boutique specializing in handcrafted Aari Work, Maggam Work, bridal blouses, designer sleeves, saree embroidery, customized embroidery, and elegant traditional craftsmanship — located in the heart of Hadapsar, Pune.
             </p>
             <p className="text-sm text-muted-light dark:text-muted-dark leading-relaxed font-sans font-light">
-              Every curve, border, and peacock motif is calculated, meticulously sketched, and transferred hand-printed onto silks. Under the creative directorship of Aadhya Sharma, we grew from a small workshop into a premier bridal design studio, collaborating with master artisans representing several generation links of native zardosi families.
+              Founded with a passion for preserving the heritage of fine tambour needlework, every design is meticulously handcrafted — from the initial sketch to the final stitch. We believe that every bride deserves embroidery that reflects her story, her culture, and her individuality.
             </p>
 
             {/* Sub Core Values */}
@@ -105,7 +105,7 @@ export default function About() {
                 <div>
                   <h4 className="font-bold text-sm text-primary dark:text-secondary-light">Our Mission</h4>
                   <p className="text-xs text-muted-light dark:text-muted-dark mt-1 font-light leading-relaxed">
-                    To keep authentic maggam work sustainable while empowering local craftswomen in the process.
+                    Delivering personalized, quality embroidery that brings your bridal vision to life with precision and care.
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function About() {
                 <div>
                   <h4 className="font-bold text-sm text-primary dark:text-secondary-light">Conscious Materials</h4>
                   <p className="text-xs text-muted-light dark:text-muted-dark mt-1 font-light leading-relaxed">
-                    Sourcing genuine silk threads, metallic zaris, and zero-corrode Japanese glass microbeads.
+                    Sourcing genuine silk threads, metallic zaris, and premium glass microbeads for lasting beauty.
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function About() {
               <div className="aspect-[4/5] rounded-3xl overflow-hidden border-2 border-secondary shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
-                  alt="Aadhya Sharma Portrait"
+                  alt="Dhanashree Pawar – Founder of Amruta's Aari Creation"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -151,24 +151,24 @@ export default function About() {
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-1">
                 <span className="text-xs uppercase font-bold tracking-widest text-primary dark:text-secondary">
-                  Master Artisan Profile
+                  Master Artisan &amp; Founder
                 </span>
                 <h2 className="font-serif font-black text-3xl md:text-5xl text-primary dark:text-secondary">
-                  {artisanInfo.name}
+                  Dhanashree Pawar
                 </h2>
                 <p className="text-sm font-semibold text-secondary-dark dark:text-secondary-light font-sans">
-                  {artisanInfo.role}
+                  Founder &amp; Lead Artisan, Amruta's Aari Creation
                 </p>
               </div>
 
               <div className="w-12 h-1 bg-primary dark:bg-secondary" />
 
               <p className="text-sm text-muted-light dark:text-muted-dark leading-relaxed font-sans font-light">
-                {artisanInfo.bio}
+                Dhanashree Pawar is the heart behind Amruta's Aari Creation. With years of dedication to the art of Aari Work and Maggam embroidery, she has crafted hundreds of personalized bridal blouses, designer sleeves, and saree embroideries — each one a reflection of her meticulous craftsmanship and genuine passion for traditional Indian textile arts.
               </p>
 
               <blockquote className="border-l-4 border-secondary pl-4 italic text-sm text-primary dark:text-secondary-light font-sans bg-primary/5 dark:bg-secondary/5 py-3 pr-4 rounded-r-xl">
-                "An Indian bride's wedding blouse is not just another dress. It houses memories, families, traditions, and custom motifs resembling the promises of tomorrow."
+                "Every stitch is a promise — of quality, of beauty, and of a bride's most precious moment made perfect."
               </blockquote>
 
               {/* Showcase highlights */}
@@ -176,15 +176,15 @@ export default function About() {
                 <div className="flex items-center gap-3">
                   <Users className="w-5 h-5 text-secondary flex-shrink-0" />
                   <div>
-                    <span className="font-semibold block text-primary dark:text-secondary-light">1,500+ Happy Brides</span>
-                    <span className="text-xs text-muted-light dark:text-muted-dark">End-to-end setups fitted perfectly</span>
+                    <span className="font-semibold block text-primary dark:text-secondary-light">Bridal Specialists</span>
+                    <span className="text-xs text-muted-light dark:text-muted-dark">Dedicated to crafting your perfect bridal look</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Award className="w-5 h-5 text-secondary flex-shrink-0" />
+                  <Heart className="w-5 h-5 text-secondary flex-shrink-0" />
                   <div>
-                    <span className="font-semibold block text-primary dark:text-secondary-light">Signature Finish</span>
-                    <span className="text-xs text-muted-light dark:text-muted-dark">{artisanInfo.signatureStyle}</span>
+                    <span className="font-semibold block text-primary dark:text-secondary-light">Customer Satisfaction</span>
+                    <span className="text-xs text-muted-light dark:text-muted-dark">Personalized designs crafted with love and care</span>
                   </div>
                 </div>
               </div>
@@ -200,7 +200,7 @@ export default function About() {
             Process Excellence
           </span>
           <h2 className="font-serif font-black text-3xl md:text-5xl text-primary dark:text-secondary mt-1">
-            Why Choose Aari Aaradhya?
+            Why Choose Amruta's Aari Creation?
           </h2>
           <div className="w-16 h-1 bg-secondary mx-auto mt-4" />
         </div>

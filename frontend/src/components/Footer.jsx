@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Instagram, Heart, Sparkles } from 'lucide-react';
 import { instagramGallery } from '../data/websiteData';
+import logoImg from '../assets/logo.jpeg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,15 +13,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="flex items-center justify-center w-9 h-9 rounded-full border border-secondary bg-white/10">
-                <Sparkles className="w-4 h-4 text-secondary" />
+              <div className="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden border border-secondary/60 bg-black">
+                <img src={logoImg} alt="Amruta's Aari Creation Logo" className="w-full h-full object-cover" />
               </div>
               <span className="font-serif font-bold text-xl tracking-wider text-secondary">
-                Aari Aaradhya
+                Amruta's Aari Creation
               </span>
             </Link>
             <p className="text-sm text-gray-300 dark:text-muted-dark leading-relaxed font-sans font-light">
-              Crafting premium hand-embellished bridal couture since 2014. Reimagining age-old metal threads and tambour techniques for modern bridal luxury.
+              Boutique specializing in handcrafted Aari Work, Maggam Work, bridal blouses, designer sleeves, and elegant traditional embroidery. Serving brides across Pune and beyond.
             </p>
             <div className="flex gap-4">
               <a
@@ -68,15 +69,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-300 dark:text-muted-dark font-light md:pr-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                <span>12-B, Ground Floor, Silk Palace Plaza, Banjara Hills Rd 10, Hyderabad, Telangana 500034</span>
+                <span>Shewalewadi, Hadapsar, Pune, Maharashtra – 412307</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-secondary transition-colors">+91 98765 43210</a>
+                <a href="tel:+919527505630" className="hover:text-secondary transition-colors">+91 9527505630</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:info@aariaaradhya.com" className="hover:text-secondary transition-colors">info@aariaaradhya.com</a>
+                <a href="mailto:contact@amrutaaricreation.com" className="hover:text-secondary transition-colors">contact@amrutaaricreation.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
@@ -97,7 +98,7 @@ export default function Footer() {
               {instagramGallery.slice(0, 6).map((img) => (
                 <a
                   key={img.id}
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/amruta_aari_creation_/"
                   target="_blank"
                   rel="noreferrer"
                   className="relative group aspect-square rounded-md overflow-hidden bg-black focus:outline-none"
@@ -122,9 +123,9 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {currentYear} Aari Aaradhya. All Rights Reserved.</p>
+          <p>© {currentYear} Amruta's Aari Creation. All Rights Reserved.</p>
           <p className="flex items-center gap-1.5 justify-center">
-            Handcrafted with <Heart className="w-3.5 h-3.5 text-secondary fill-secondary" /> in Hyderabad, India
+            Handcrafted with <Heart className="w-3.5 h-3.5 text-secondary fill-secondary" /> in Pune, Maharashtra
           </p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

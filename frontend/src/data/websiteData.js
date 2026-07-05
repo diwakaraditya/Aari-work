@@ -166,7 +166,7 @@ export const reviews = [
     role: 'Bride from June 2026',
     avatar: 'SR',
     rating: 5,
-    text: 'Aari Aaradhya created my dream wedding blouse. The peacock zardosi work was stunning, and the fitting was flawless. Everyone at the wedding kept asking where I got it done! Worth every single rupee.'
+    text: 'Amruta\'s Aari Creation crafted my dream wedding blouse. The peacock zardosi work was stunning, and the fitting was flawless. Everyone at the wedding kept asking where I got it done! Worth every single rupee.'
   },
   {
     id: 2,
@@ -187,13 +187,13 @@ export const reviews = [
 ];
 
 export const artisanInfo = {
-  name: 'Aadhya Sharma',
-  role: 'Founder & Master Designer',
-  bio: 'Aadhya Sharma is an award-winning embroidery illustrator and traditional designer. With over 12 years of hands-on experience restoring antique zardosi heirlooms and training rural women in tambour stitching, she brings a mixture of deep historical motifs and modern silhouette choices to life.',
-  experience: '12+ Years',
-  happyClients: '1,500+',
-  designsCreated: '4,000+',
-  signatureStyle: 'High-density gold-thread kundan embedding with structured velvet linings.'
+  name: 'Dhanashree Pawar',
+  role: 'Founder & Lead Artisan',
+  bio: 'Dhanashree Pawar is the heart and creative spirit behind Amruta\'s Aari Creation. With years of dedication to the art of Aari Work and Maggam embroidery, she has crafted hundreds of personalized bridal blouses, designer sleeves, and saree embroideries — each a reflection of her meticulous craftsmanship and genuine passion for traditional Indian textile arts. Based in Hadapsar, Pune, Dhanashree brings a personal, boutique touch to every creation.',
+  experience: 'Years of Dedication',
+  happyClients: 'Happy Brides',
+  designsCreated: 'Custom Designs',
+  signatureStyle: 'Handcrafted precision with genuine silk threads, zari, and elegant traditional motifs.'
 };
 
 export const instagramGallery = [

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, Sparkles } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import useDarkMode from '../hooks/useDarkMode';
 import { preloadRoute } from '../utils/routePreloads';
+import logoImg from '../assets/logo.jpeg';
 
 const navigationLinks = [
   { name: 'Home', path: '/' },
@@ -48,15 +49,19 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-secondary bg-primary/10 group-hover:bg-primary/20 dark:bg-secondary/15 transition-colors">
-              <Sparkles className="w-5 h-5 text-primary dark:text-secondary group-hover:rotate-12 transition-transform duration-300" />
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-full overflow-hidden border-2 border-secondary/60 bg-black group-hover:border-secondary transition-all duration-300">
+              <img
+                src={logoImg}
+                alt="Amruta's Aari Creation Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg md:text-xl tracking-wider text-primary dark:text-secondary leading-none">
                 Amruta's Aari Creation
               </span>
               <span className="text-[10px] uppercase font-sans tracking-[0.2em] text-muted-light dark:text-muted-dark leading-none mt-1">
-                Maggam & Embroidery Studio
+                Premium Aari &amp; Maggam Studio
               </span>
             </div>
           </Link>

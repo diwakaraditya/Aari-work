@@ -33,8 +33,8 @@ const cardVariants = {
 
 export default function Services() {
   const getWhatsAppServiceUrl = (title) => {
-    const phone = '919876543210';
-    const text = encodeURIComponent(`Hi Aari Aaradhya, I would like to inquire about the service: "${title}". Could you please guide me on booking and customization?`);
+    const phone = '919527505630';
+    const text = encodeURIComponent(`Hello, I'm interested in your Aari Work designs. Specifically about: "${title}".`);
     return `https://wa.me/${phone}?text=${text}`;
   };
 
@@ -80,7 +80,7 @@ export default function Services() {
                       {srv.title}
                     </h3>
                     <span className="text-[10px] text-muted-light dark:text-muted-dark font-sans font-semibold tracking-wider">
-                      Aari Aaradhya Studio
+                      Amruta's Aari Creation
                     </span>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function Services() {
             Note on Out-of-City Custom Orders
           </h3>
           <p className="text-xs text-muted-light dark:text-muted-dark leading-relaxed font-sans font-light">
-            Don't live in Hyderabad? No problem! We offer virtual design consultations via video calls and take measurement confirmation sheets online. We send embroidery swatches for sample confirmation and ship finished bridal blouses globally with secure tracking.
+            Don't live in Pune? No problem! We offer virtual design consultations via video calls and take measurement confirmation sheets online. We send embroidery swatches for sample confirmation and ship finished bridal blouses with secure tracking.
           </p>
           <Link
             to="/contact"
