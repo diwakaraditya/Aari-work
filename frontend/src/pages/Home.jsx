@@ -109,9 +109,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Award, title: "Award Winning Artistry", desc: "Recognized for preserving traditional tambour techniques and delivering neat finished linings." },
-              { icon: ShieldCheck, title: "100% Fit Guarantee", desc: "Perfect-maggam lining designs measured precisely to your sleeve curves and neckline dimensions." },
-              { icon: Clock, title: "Punctual Delivery Guarantee", desc: "Crafted details require time, but we promise delivery right on schedule for your big day." }
+              { icon: Award, title: "Handcrafted Aari & Maggam Work", desc: "Every embroidery design is carefully handcrafted with attention to detail and traditional techniques." },
+              { icon: ShieldCheck, title: "Custom Embroidery Designs", desc: "Personalized embroidery for bridal blouses, sarees, dresses, and boutique collections based on customer preferences." },
+              { icon: Clock, title: "Personalized Customer Service", desc: "We work closely with every customer to understand their ideas and create embroidery that matches their vision." }
             ].map((feature, idx) => (
               <div key={idx} className="flex gap-4 items-start p-4 hover:bg-bg-light dark:hover:bg-bg-dark/50 rounded-2xl transition-colors duration-300">
                 <span className="flex-shrink-0 p-3 rounded-full bg-primary/10 dark:bg-secondary/15 text-primary dark:text-secondary">

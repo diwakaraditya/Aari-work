@@ -119,7 +119,7 @@ export default function Contact() {
                       Email Inquiries
                     </h4>
                     <p className="text-xs text-text-light dark:text-text-dark leading-relaxed font-light">
-                      <a href="mailto:contact@amrutaaricreation.com" className="hover:text-secondary">contact@amrutaaricreation.com</a>
+                      <a href="mailto:amrutaaricreation@gmail.com" className="hover:text-secondary">amrutaaricreation@gmail.com</a>
                     </p>
                   </div>
                 </div>
