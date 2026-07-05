@@ -123,7 +123,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {currentYear} Amruta's Aari Creation. All Rights Reserved.</p>
+          <p>© {currentYear} Amruta's Aari Creation, Powered by Diwakar & Shinde. All Rights Reserved.</p>
           <p className="flex items-center gap-1.5 justify-center">
             Handcrafted with <Heart className="w-3.5 h-3.5 text-secondary fill-secondary" /> in Pune, Maharashtra
           </p>
