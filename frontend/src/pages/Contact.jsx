@@ -82,7 +82,7 @@ export default function Contact() {
                       Our Location
                     </h4>
                     <p className="text-xs text-text-light dark:text-text-dark leading-relaxed font-light">
-                      12-B, Ground Floor, Silk Palace Plaza, Banjara Hills Rd 10, Hyderabad, Telangana 500034
+                      Shewalewadi, Pune, Maharashtra 412303
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                       Phone / Call Hours
                     </h4>
                     <p className="text-xs text-text-light dark:text-text-dark leading-relaxed font-light">
-                      <a href="tel:+919876543210" className="hover:text-secondary">+91 98765 43210</a>
+                      <a href="tel:+91 95275 05630" className="hover:text-secondary">+91 95275 05630</a>
                     </p>
                     <span className="text-[10px] text-muted-light/65 dark:text-muted-dark/65 block mt-0.5">
                       Mon-Sat: 10:00 AM - 8:00 PM
@@ -115,7 +115,7 @@ export default function Contact() {
                       Email Inquiries
                     </h4>
                     <p className="text-xs text-text-light dark:text-text-dark leading-relaxed font-light">
-                      <a href="mailto:info@aariaaradhya.com" className="hover:text-secondary">info@aariaaradhya.com</a>
+                      <a href="mailto:Dhanshreepawar5107@gmail.com" className="hover:text-secondary">Dhanshreepawar5107@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -147,11 +147,11 @@ export default function Contact() {
                   <MessageSquare className="w-4 h-4" /> Book Consultation Slot
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/amruta_aari_creation_/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-3 rounded-full bg-primary text-white dark:bg-secondary dark:text-bg-dark hover:opacity-90 transition-opacity flex items-center justify-center"
-                  aria-label="Instagram Link"
+                  aria-label="https://www.instagram.com/amruta_aari_creation_/"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
@@ -165,13 +165,13 @@ export default function Contact() {
                 style={{ backgroundImage: `url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bg-light/95 via-bg-light/60 to-transparent dark:from-card-dark/95 dark:via-card-dark/70 dark:to-transparent" />
-              
+
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-center">
                 <span className="text-secondary font-bold text-xs uppercase font-sans tracking-widest block">Google Maps Placeholder</span>
                 <span className="text-primary dark:text-white font-serif font-semibold text-sm mt-1 block">Banjara Hills Rd 10, Hyderabad</span>
-                <a 
-                  href="https://maps.google.com" 
-                  target="_blank" 
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 inline-block mx-auto px-5 py-2.5 bg-primary dark:bg-secondary text-white dark:text-bg-dark rounded-full font-sans font-bold text-[10px] tracking-wider uppercase shadow-md hover:scale-105 transition-transform"
                 >

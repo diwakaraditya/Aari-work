@@ -39,11 +39,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled
-          ? 'glass-effect shadow-md py-3'
-          : 'bg-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled
+        ? 'glass-effect shadow-md py-3'
+        : 'bg-transparent py-5'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -54,7 +53,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg md:text-xl tracking-wider text-primary dark:text-secondary leading-none">
-                Aari Aaradhya
+                Amruta's Aari Creation
               </span>
               <span className="text-[10px] uppercase font-sans tracking-[0.2em] text-muted-light dark:text-muted-dark leading-none mt-1">
                 Maggam & Embroidery Studio
@@ -75,20 +74,18 @@ export default function Navbar() {
                   className="relative py-2 text-sm font-medium tracking-wide uppercase group text-text-light dark:text-text-dark"
                 >
                   <span
-                    className={`transition-colors duration-300 ${
-                      isActive
-                        ? 'text-primary dark:text-secondary font-semibold'
-                        : 'group-hover:text-primary dark:group-hover:text-secondary'
-                    }`}
+                    className={`transition-colors duration-300 ${isActive
+                      ? 'text-primary dark:text-secondary font-semibold'
+                      : 'group-hover:text-primary dark:group-hover:text-secondary'
+                      }`}
                   >
                     {link.name}
                   </span>
-                  
+
                   {/* Underline Indicator */}
                   <span
-                    className={`absolute bottom-0 left-0 h-[2px] bg-secondary transition-all duration-300 ${
-                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}
+                    className={`absolute bottom-0 left-0 h-[2px] bg-secondary transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
                   />
                 </Link>
               );
@@ -146,11 +143,10 @@ export default function Navbar() {
                     to={link.path}
                     onMouseEnter={() => preloadRoute(link.path)}
                     onFocus={() => preloadRoute(link.path)}
-                    className={`block px-4 py-3 rounded-xl text-sm font-medium tracking-wide uppercase transition-all duration-200 ${
-                      isActive
-                        ? 'bg-primary text-white dark:bg-secondary dark:text-bg-dark font-semibold'
-                        : 'text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5'
-                    }`}
+                    className={`block px-4 py-3 rounded-xl text-sm font-medium tracking-wide uppercase transition-all duration-200 ${isActive
+                      ? 'bg-primary text-white dark:bg-secondary dark:text-bg-dark font-semibold'
+                      : 'text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5'
+                      }`}
                   >
                     {link.name}
                   </Link>

@@ -24,8 +24,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com" 
-                target="_blank" 
+                href="https://www.instagram.com/amruta_aari_creation_/"
+                target="_blank"
                 rel="noreferrer"
                 className="p-2.5 rounded-full bg-white/10 hover:bg-secondary hover:text-bg-dark transition-all duration-300 focus:outline-none"
                 aria-label="Instagram Link"
