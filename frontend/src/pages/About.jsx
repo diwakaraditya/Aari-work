@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ShieldCheck, Award, Heart, Leaf, Users, MapPin, Sparkles, CheckCircle } from 'lucide-react';
 import { artisanInfo } from '../data/websiteData';
+import ownerImage from "../assets/Dhanashreeimage7.jpeg";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 35 },
@@ -64,7 +65,7 @@ export default function About() {
                 </span>
               </div>
             </div>
-            
+
             <div className="space-y-4 pt-8">
               <div className="rounded-2xl p-6 bg-secondary/15 text-center flex flex-col justify-center">
                 <span className="text-2xl font-serif font-black text-primary dark:text-secondary-dark">Bridal</span>
@@ -137,7 +138,7 @@ export default function About() {
             <div className="lg:col-span-5 relative order-last lg:order-first">
               <div className="aspect-[4/5] rounded-3xl overflow-hidden border-2 border-secondary shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
+                  src={ownerImage}
                   alt="Dhanashree Pawar – Founder of Amruta's Aari Creation"
                   className="w-full h-full object-cover"
                 />

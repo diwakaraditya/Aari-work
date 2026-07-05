@@ -9,8 +9,9 @@ const filterTabs = [
   { name: 'All Collection', value: 'all' },
   { name: 'Bridal Blouses', value: 'bridal-blouses' },
   { name: 'Wedding Sarees', value: 'wedding-sarees' },
-  { name: 'Party Wear', value: 'party-wear' },
-  { name: 'Kids Wear', value: 'kids-wear' },
+  { name: 'Earcuff', value: 'earcuff' },
+  { name: 'Chokerset', value: 'chokerset' },
+  { name: 'Nath', value: 'nath' },
   { name: 'Custom Designs', value: 'custom-designs' }
 ];
 
@@ -49,8 +50,15 @@ export default function Gallery() {
   // Filter gallery items based on search and category
   const filteredItems = galleryItems.filter((item) => {
     const matchesCategory = activeCategory === 'all' || item.category === activeCategory;
-    const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const q = searchQuery.toLowerCase();
+    const matchesSearch =
+      !q ||
+      item.title.toLowerCase().includes(q) ||
+      item.description.toLowerCase().includes(q) ||
+      (item.client && item.client.toLowerCase().includes(q)) ||
+      (item.categoryLabel && item.categoryLabel.toLowerCase().includes(q)) ||
+      item.category.toLowerCase().includes(q) ||
+      (item.keywords && item.keywords.some(kw => kw.toLowerCase().includes(q)));
     return matchesCategory && matchesSearch;
   });
 
@@ -146,7 +154,7 @@ export default function Gallery() {
                 {/* Quick Info Box */}
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white flex flex-col justify-end">
                   <span className="text-[9px] uppercase font-bold tracking-widest text-secondary-light">
-                    {item.category.replace('-', ' ')}
+                    {item.categoryLabel || item.category.replace(/-/g, ' ')}
                   </span>
                   <h3 className="font-serif font-black text-lg text-white mt-1 leading-snug group-hover:text-secondary-light transition-colors">
                     {item.title}
@@ -221,7 +229,7 @@ export default function Gallery() {
                 <div className="space-y-4">
                   <div>
                     <span className="text-[10px] uppercase font-bold tracking-widest text-primary dark:text-secondary bg-primary/10 dark:bg-secondary/15 px-2.5 py-1 rounded-full">
-                      {selectedItem.category.replace('-', ' ')}
+                      {selectedItem.categoryLabel || selectedItem.category.replace(/-/g, ' ')}
                     </span>
                     <h2 className="font-serif font-black text-2xl md:text-3xl text-primary dark:text-secondary mt-3">
                       {selectedItem.title}

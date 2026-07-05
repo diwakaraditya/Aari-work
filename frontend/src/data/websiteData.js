@@ -1,50 +1,98 @@
+// ─── Instagram Gallery Imports ────────────────────────────────────────────────
 import maggamWork1 from '../assets/Maggamworkimage1.jpeg';
-import earcuff1 from '../assets/EarcuffImage1.jpeg';
-import sareeEmbroidery1 from '../assets/SareeEmbroideryimage1.jpeg';
-import sareeEmbroidery2 from '../assets/SareeEmbroideryimage2.jpeg';
+import earcuff1    from '../assets/EarcuffImage1.jpeg';
+import sareeEmb1   from '../assets/SareeEmbroideryimage1.jpeg';
+import sareeEmb2   from '../assets/SareeEmbroideryimage2.jpeg';
 import threadWork1 from '../assets/Threadworkimage1.jpeg';
 import maggamWork3 from '../assets/Maggamworkimage3.jpeg';
 
+// ─── Bridal Blouses Imports ───────────────────────────────────────────────────
+import bridalBlouse1 from '../assets/Maggamworkimage1.jpeg';
+import bridalBlouse2 from '../assets/Maggamworkimage2.jpeg';
+import bridalBlouse3 from '../assets/Maggamworkimage3.jpeg';
+import bridalBlouse4 from '../assets/MaggamworkImage4.jpeg';
+
+// ─── Wedding Sarees Imports ───────────────────────────────────────────────────
+import weddingSaree1 from '../assets/SareeEmbroideryimage1.jpeg';
+import weddingSaree2 from '../assets/SareeEmbroideryimage2.jpeg';
+import weddingSaree3 from '../assets/SareeEmbroideryimage3.jpeg';
+import weddingSaree4 from '../assets/SareeEmbroideryimage4.jpeg';
+import weddingSaree5 from '../assets/SareeEmbroideryimage5.jpeg';
+
+// ─── Earcuff Imports ──────────────────────────────────────────────────────────
+import earcuffImg1 from '../assets/EarcuffImage1.jpeg';
+import earcuffImg2 from '../assets/EarcuffImage2.jpeg';
+import earcuffImg3 from '../assets/EarcuffImage5.jpeg';
+import earcuffImg4 from '../assets/EarcuffImage3.jpeg';
+import earcuffImg5 from '../assets/EarcuffImage7.jpeg';
+
+// ─── Chokerset Imports ────────────────────────────────────────────────────────
+import chokerSet1 from '../assets/Chokersetimage1.jpeg';
+import chokerSet2 from '../assets/Chokersetimage2.jpeg';
+import chokerSet3 from '../assets/Chokersetimage3.jpeg';
+import chokerSet4 from '../assets/Chokersetimage4.jpeg';
+import chokerSet5 from '../assets/Dhanashreeimage2.jpeg';
+
+// ─── Nath Imports ─────────────────────────────────────────────────────────────
+import nath1 from '../assets/NathImage1.jpeg';
+import nath2 from '../assets/NathImage2.jpeg';
+import nath3 from '../assets/NathImage3.jpeg';
+
+// ─── Custom Designs Imports ───────────────────────────────────────────────────
+import customDesign1 from '../assets/Dhanashreeimage3.jpeg';
+import customDesign2 from '../assets/Dhanashreeimage1.jpeg';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CATEGORIES
+// ─────────────────────────────────────────────────────────────────────────────
 export const categories = [
   {
     id: 'bridal-blouses',
     name: 'Bridal Blouses',
     slug: 'bridal-blouses',
     description: 'Detailed heavy Aari & Maggam work designed to make your special day absolute perfection.',
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
-    count: 18
+    image: bridalBlouse1,
+    count: 4
   },
   {
     id: 'wedding-sarees',
     name: 'Wedding Sarees',
     slug: 'wedding-sarees',
     description: 'Bespoke scalloped borders, buttis, and heavy pallu craftsmanship on pure silk sarees.',
-    image: 'https://images.unsplash.com/photo-1610030469668-93535c17b6b3?auto=format&fit=crop&w=800&q=80',
-    count: 12
+    image: weddingSaree1,
+    count: 5
   },
   {
-    id: 'party-wear',
-    name: 'Party Wear',
-    slug: 'party-wear',
-    description: 'Minimalist contemporary tambour work for designer lehengas, kurtis, and gowns.',
-    image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-    count: 15
+    id: 'earcuff',
+    name: 'Earcuff',
+    slug: 'earcuff',
+    description: 'Handcrafted Aari work earcuffs — delicate, lightweight, and perfectly detailed for every occasion.',
+    image: earcuffImg1,
+    count: 5
   },
   {
-    id: 'kids-wear',
-    name: 'Kids Wear',
-    slug: 'kids-wear',
-    description: 'Adorable custom pattu langas and designer frocks with soft, skin-friendly embroidery backings.',
-    image: 'https://images.unsplash.com/photo-1621259182978-f09e5e24b584?auto=format&fit=crop&w=800&q=80',
-    count: 8
+    id: 'chokerset',
+    name: 'Chokerset',
+    slug: 'chokerset',
+    description: 'Elegant Aari embroidered choker sets crafted with fine threads and traditional motifs.',
+    image: chokerSet1,
+    count: 5
+  },
+  {
+    id: 'nath',
+    name: 'Nath',
+    slug: 'nath',
+    description: 'Traditional nose rings (nath) beautifully adorned with intricate Aari threadwork and floral designs.',
+    image: nath1,
+    count: 3
   },
   {
     id: 'custom-designs',
     name: 'Custom Designs',
     slug: 'custom-designs',
     description: 'Personalized motifs, sketches translated into needlework, and customized beadwork compositions.',
-    image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
-    count: 24
+    image: customDesign1,
+    count: 2
   }
 ];
 
@@ -99,71 +147,274 @@ export const services = [
   }
 ];
 
-export const galleryItems = [
+// ── Per-Category Gallery Arrays ───────────────────────────────────────────────
+
+export const bridalBlousesGallery = [
   {
-    id: 1,
-    title: 'Golden Peacock Zardosi Blouse',
+    id: 'bb-1',
+    title: 'Golden Maggam Work Blouse',
     category: 'bridal-blouses',
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
-    description: 'Traditional peacock motif adorned with antique gold kundan work, fine zardosi outlines, and micro bead fillings.',
-    client: 'Priyanka S., Hyderabad'
+    categoryLabel: 'Bridal Blouses',
+    image: bridalBlouse1,
+    description: 'Rich Maggam work blouse adorned with antique gold kundan motifs, fine zardosi outlines, and intricate bead fillings — handcrafted for the perfect bridal look.',
+    client: 'Priyanka S., Pune',
+    keywords: ['maggam', 'bridal', 'gold', 'kundan', 'zardosi', 'blouse']
   },
   {
-    id: 2,
-    title: 'Scalloped Wedding Saree Border',
+    id: 'bb-2',
+    title: 'Heavy Zardosi Sleeve Blouse',
+    category: 'bridal-blouses',
+    categoryLabel: 'Bridal Blouses',
+    image: bridalBlouse2,
+    description: 'Heavily embellished bridal blouse sleeve with zardosi detailing, mirror work, and hand-rolled gold thread — a timeless traditional masterpiece.',
+    client: 'Deepika G., Hyderabad',
+    keywords: ['zardosi', 'sleeve', 'bridal', 'mirror work', 'blouse', 'gold thread']
+  },
+  {
+    id: 'bb-3',
+    title: 'Traditional Peacock Neckline',
+    category: 'bridal-blouses',
+    categoryLabel: 'Bridal Blouses',
+    image: bridalBlouse3,
+    description: 'Peacock motif neckline embroidered with authentic silk threads, zari accents, and micro bead work for an elegant bridal finish.',
+    client: 'Anjali R., Mumbai',
+    keywords: ['peacock', 'neckline', 'bridal', 'silk', 'zari', 'blouse']
+  },
+  {
+    id: 'bb-4',
+    title: 'Royal Heritage Bridal Blouse',
+    category: 'bridal-blouses',
+    categoryLabel: 'Bridal Blouses',
+    image: bridalBlouse4,
+    description: 'A regal bridal blouse featuring heritage floral and geometric motifs, richly worked in Maggam style with layered metallic embellishments.',
+    client: 'Kavitha D., Vizag',
+    keywords: ['royal', 'heritage', 'floral', 'geometric', 'maggam', 'bridal', 'blouse']
+  }
+];
+
+export const weddingSareesGallery = [
+  {
+    id: 'ws-1',
+    title: 'Scalloped Silk Saree Border',
     category: 'wedding-sarees',
-    image: 'https://images.unsplash.com/photo-1610030469668-93535c17b6b3?auto=format&fit=crop&w=800&q=80',
-    description: 'Gold-copper thread meshwork with pearl chain inserts and fine cutwork embroidery along the drape border.',
-    client: 'Ananya R., Bangalore'
+    categoryLabel: 'Wedding Sarees',
+    image: weddingSaree1,
+    description: 'Gold-copper thread meshwork with pearl chain inserts and fine cutwork embroidery along the drape border of a pure silk wedding saree.',
+    client: 'Ananya R., Bangalore',
+    keywords: ['saree', 'border', 'scalloped', 'silk', 'pearl', 'gold', 'wedding']
   },
   {
-    id: 3,
-    title: 'Pastel Flora Lehenga Embroidery',
-    category: 'party-wear',
-    image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
-    description: 'Shaded pink and green silk threads intertwined with tiny transparent sequence beads for a modern romantic glow.',
-    client: 'Meera K., Chennai'
+    id: 'ws-2',
+    title: 'Floral Pallu Wedding Saree',
+    category: 'wedding-sarees',
+    categoryLabel: 'Wedding Sarees',
+    image: weddingSaree2,
+    description: 'Bespoke floral pallu with layered buttis across the body and intricate handcrafted border — a show-stopper bridal saree.',
+    client: 'Nirupama P., Kochi',
+    keywords: ['saree', 'pallu', 'floral', 'butti', 'bridal', 'wedding']
   },
   {
-    id: 4,
-    title: 'Tiny Tots Blossom Pattu Pavadai',
-    category: 'kids-wear',
-    image: 'https://images.unsplash.com/photo-1621259182978-f09e5e24b584?auto=format&fit=crop&w=800&q=80',
-    description: 'Dainty floral vines embroidered with soft threads and zero-abrasion lining layout for baby skin comfort.',
-    client: 'Suhasini M., Vijayawada'
-  },
-  {
-    id: 5,
-    title: 'Bespoke Radha-Krishna Bridal Neckline',
-    category: 'custom-designs',
-    image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
-    description: 'An extraordinary narrative masterpiece hand-embroidered on crimson silk showcasing the divine couple in a garden posture.',
-    client: 'Kavitha D., Vizag'
-  },
-  {
-    id: 6,
-    title: 'Royal Elephant Heritage Sleeve',
-    category: 'bridal-blouses',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
-    description: 'Elephant march motif bordered with hand-rolled gold thread beads and finished with heavy velvet patch trims.',
-    client: 'Deepika G., Hyderabad'
-  },
-  {
-    id: 7,
-    title: 'Contemporary Geometrical Silk Kurti',
-    category: 'party-wear',
-    image: 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=800&q=80',
-    description: 'Modern lines met with ancient tambour stitch methods, using metallic copper thread on raw forest green silk.',
-    client: 'Rithika V., Mumbai'
-  },
-  {
-    id: 8,
+    id: 'ws-3',
     title: 'Pearl Symphony Saree Pallu',
     category: 'wedding-sarees',
-    image: 'https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=800&q=80',
-    description: 'Over 5000 salt-water pearls hand-woven into matching mesh patterns, creating a mesmerizing drape tail.',
-    client: 'Nirupama P., Kochi'
+    categoryLabel: 'Wedding Sarees',
+    image: weddingSaree3,
+    description: 'Thousands of pearls hand-woven into matching mesh patterns, creating a mesmerizing drape tail that glows under every light.',
+    client: 'Meera K., Chennai',
+    keywords: ['pearl', 'saree', 'pallu', 'silk', 'wedding', 'mesh']
+  },
+  {
+    id: 'ws-4',
+    title: 'Heritage Zari Saree Work',
+    category: 'wedding-sarees',
+    categoryLabel: 'Wedding Sarees',
+    image: weddingSaree4,
+    description: 'Traditional zari and silk thread embroidery on a pure Kanjivaram saree, capturing the essence of South Indian bridal heritage.',
+    client: 'Suhasini M., Vijayawada',
+    keywords: ['zari', 'kanjivaram', 'saree', 'heritage', 'silk', 'south indian', 'wedding']
+  },
+  {
+    id: 'ws-5',
+    title: 'Designer Silk Border Saree',
+    category: 'wedding-sarees',
+    categoryLabel: 'Wedding Sarees',
+    image: weddingSaree5,
+    description: 'Custom designer border on a silk saree with stone drop fringes, scalloped edge finishing, and lightweight thread border variants.',
+    client: 'Rithika V., Mumbai',
+    keywords: ['designer', 'border', 'saree', 'silk', 'stone', 'fringes', 'scalloped', 'wedding']
   }
+];
+
+export const earcuffGallery = [
+  {
+    id: 'ec-1',
+    title: 'Aari Floral Earcuff',
+    category: 'earcuff',
+    categoryLabel: 'Earcuff',
+    image: earcuffImg1,
+    description: 'Delicate Aari work floral earcuff crafted with fine silk threads — lightweight, elegant, and perfect for bridal and festive occasions.',
+    client: 'Priya M., Pune',
+    keywords: ['earcuff', 'floral', 'aari', 'silk', 'bridal', 'festive', 'jewelry']
+  },
+  {
+    id: 'ec-2',
+    title: 'Traditional Beaded Earcuff',
+    category: 'earcuff',
+    categoryLabel: 'Earcuff',
+    image: earcuffImg2,
+    description: 'Handcrafted earcuff with traditional motifs and micro bead embellishments — a perfect complement to any ethnic outfit.',
+    client: 'Sneha R., Nashik',
+    keywords: ['earcuff', 'beaded', 'traditional', 'ethnic', 'jewelry', 'aari']
+  },
+  {
+    id: 'ec-3',
+    title: 'Gold Thread Earcuff',
+    category: 'earcuff',
+    categoryLabel: 'Earcuff',
+    image: earcuffImg3,
+    description: 'Stunning gold-thread Aari earcuff with peacock and floral motifs, designed to add a regal touch to bridal jewellery.',
+    client: 'Tanvi S., Kolhapur',
+    keywords: ['earcuff', 'gold thread', 'peacock', 'floral', 'bridal', 'regal', 'jewelry']
+  },
+  {
+    id: 'ec-4',
+    title: 'Pearl Drop Earcuff',
+    category: 'earcuff',
+    categoryLabel: 'Earcuff',
+    image: earcuffImg4,
+    description: 'Elegant earcuff featuring pearl drops and fine Aari threadwork, inspired by traditional South Indian jewellery design.',
+    client: 'Divya K., Pune',
+    keywords: ['earcuff', 'pearl', 'drop', 'south indian', 'aari', 'jewelry', 'traditional']
+  },
+  {
+    id: 'ec-5',
+    title: 'Kundan Aari Earcuff',
+    category: 'earcuff',
+    categoryLabel: 'Earcuff',
+    image: earcuffImg5,
+    description: 'Rich kundan-set Aari earcuff with intricate needlework and stone embellishments — a luxurious accessory for weddings and receptions.',
+    client: 'Pooja D., Solapur',
+    keywords: ['earcuff', 'kundan', 'stone', 'wedding', 'reception', 'aari', 'luxury', 'jewelry']
+  }
+];
+
+export const chokersetGallery = [
+  {
+    id: 'cs-1',
+    title: 'Bridal Aari Choker Set',
+    category: 'chokerset',
+    categoryLabel: 'Chokerset',
+    image: chokerSet1,
+    description: 'Exquisite Aari work bridal choker set with matching earrings, crafted in gold and red silk threads for a classic traditional look.',
+    client: 'Anitha P., Pune',
+    keywords: ['choker', 'chokerset', 'bridal', 'aari', 'gold', 'silk', 'traditional', 'jewelry']
+  },
+  {
+    id: 'cs-2',
+    title: 'Floral Choker Necklace',
+    category: 'chokerset',
+    categoryLabel: 'Chokerset',
+    image: chokerSet2,
+    description: 'Delicate floral choker necklace handcrafted with intricate Aari embroidery and tiny beads, ideal for festive and bridal wear.',
+    client: 'Madhuri S., Nashik',
+    keywords: ['choker', 'floral', 'necklace', 'aari', 'beads', 'festive', 'bridal', 'jewelry']
+  },
+  {
+    id: 'cs-3',
+    title: 'Pearl Choker Set',
+    category: 'chokerset',
+    categoryLabel: 'Chokerset',
+    image: chokerSet3,
+    description: 'Traditional pearl-adorned choker set featuring Aari threadwork and pearl drops — a timeless piece for brides and bridesmaids.',
+    client: 'Lata K., Mumbai',
+    keywords: ['choker', 'pearl', 'set', 'aari', 'threadwork', 'bridal', 'bridesmaid', 'jewelry']
+  },
+  {
+    id: 'cs-4',
+    title: 'Heritage Temple Choker',
+    category: 'chokerset',
+    categoryLabel: 'Chokerset',
+    image: chokerSet4,
+    description: 'Temple-inspired choker set with rich gold-thread Aari work, stone setting, and traditional motifs for grand occasions.',
+    client: 'Rekha M., Kolhapur',
+    keywords: ['choker', 'temple', 'heritage', 'gold thread', 'stone', 'traditional', 'aari', 'jewelry']
+  },
+  {
+    id: 'cs-5',
+    title: 'Designer Choker with Pendant',
+    category: 'chokerset',
+    categoryLabel: 'Chokerset',
+    image: chokerSet5,
+    description: 'Contemporary designer choker with an Aari-embroidered pendant and matching earrings, blending tradition with modern style.',
+    client: 'Dhanashree P., Pune',
+    keywords: ['choker', 'designer', 'pendant', 'contemporary', 'aari', 'modern', 'jewelry']
+  }
+];
+
+export const nathGallery = [
+  {
+    id: 'nth-1',
+    title: 'Maharashtrian Bridal Nath',
+    category: 'nath',
+    categoryLabel: 'Nath',
+    image: nath1,
+    description: 'Traditional Maharashtrian bridal nath with Aari threadwork detailing and authentic pearl and floral embellishments — a cultural treasure.',
+    client: 'Sonali D., Pune',
+    keywords: ['nath', 'maharashtrian', 'bridal', 'pearl', 'floral', 'traditional', 'jewelry']
+  },
+  {
+    id: 'nth-2',
+    title: 'Gold Bead Nath',
+    category: 'nath',
+    categoryLabel: 'Nath',
+    image: nath2,
+    description: 'Elegant nose ring crafted with gold-toned beads and fine Aari embroidery, designed for both traditional and contemporary bridal looks.',
+    client: 'Varsha T., Satara',
+    keywords: ['nath', 'gold', 'bead', 'nose ring', 'bridal', 'aari', 'jewelry']
+  },
+  {
+    id: 'nth-3',
+    title: 'Stone-Set Festive Nath',
+    category: 'nath',
+    categoryLabel: 'Nath',
+    image: nath3,
+    description: 'Festive nath adorned with precious stones and hand-stitched Aari motifs — a showpiece for weddings, receptions, and special celebrations.',
+    client: 'Prachi B., Nagpur',
+    keywords: ['nath', 'stone', 'festive', 'wedding', 'reception', 'aari', 'jewelry']
+  }
+];
+
+export const customDesignsGallery = [
+  {
+    id: 'cd-1',
+    title: 'Bespoke Portrait Blouse Design',
+    category: 'custom-designs',
+    categoryLabel: 'Custom Designs',
+    image: customDesign1,
+    description: 'A custom portrait-inspired hand-embroidered motif, personally sketched and brought to life with needle and thread for a one-of-a-kind creation.',
+    client: 'Dhanashree P., Pune',
+    keywords: ['custom', 'portrait', 'bespoke', 'sketch', 'hand embroidered', 'aari', 'unique']
+  },
+  {
+    id: 'cd-2',
+    title: 'Custom Radha-Krishna Neckline',
+    category: 'custom-designs',
+    categoryLabel: 'Custom Designs',
+    image: customDesign2,
+    description: 'An extraordinary narrative masterpiece hand-embroidered on crimson silk, showcasing a divine motif composed by the client and crafted with devotion.',
+    client: 'Dhanashree P., Pune',
+    keywords: ['custom', 'radha krishna', 'neckline', 'crimson', 'silk', 'narrative', 'devotion', 'aari']
+  }
+];
+
+// ── Merged All Collection ─────────────────────────────────────────────────────
+export const galleryItems = [
+  ...bridalBlousesGallery,
+  ...weddingSareesGallery,
+  ...earcuffGallery,
+  ...chokersetGallery,
+  ...nathGallery,
+  ...customDesignsGallery
 ];
 
 export const reviews = [
@@ -204,10 +455,10 @@ export const artisanInfo = {
 };
 
 export const instagramGallery = [
-  { id: 1, url: maggamWork1,      alt: 'Maggam Work Embroidery' },
-  { id: 2, url: earcuff1,         alt: 'Aari Earcuff Design' },
-  { id: 3, url: sareeEmbroidery1, alt: 'Saree Embroidery Work 1' },
-  { id: 4, url: sareeEmbroidery2, alt: 'Saree Embroidery Work 2' },
-  { id: 5, url: threadWork1,      alt: 'Thread Work Design' },
-  { id: 6, url: maggamWork3,      alt: 'Maggam Work Design 3' }
+  { id: 1, url: maggamWork1,  alt: 'Maggam Work Embroidery' },
+  { id: 2, url: earcuff1,     alt: 'Aari Earcuff Design' },
+  { id: 3, url: sareeEmb1,    alt: 'Saree Embroidery Work 1' },
+  { id: 4, url: sareeEmb2,    alt: 'Saree Embroidery Work 2' },
+  { id: 5, url: threadWork1,  alt: 'Thread Work Design' },
+  { id: 6, url: maggamWork3,  alt: 'Maggam Work Design 3' }
 ];
