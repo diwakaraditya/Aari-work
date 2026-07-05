@@ -406,7 +406,7 @@ export default function Home() {
               >
                 <img
                   src={img.url}
-                  alt={`Amruta's Aari Creation - Instagram Post ${img.id}`}
+                  alt={img.alt || `Amruta's Aari Creation - Instagram Post ${img.id}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />

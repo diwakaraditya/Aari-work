@@ -83,7 +83,7 @@ export default function Footer() {
                 <Clock className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p>Mon - Sat: 10:00 AM - 8:00 PM</p>
-                  <bp className="text-secondary text-xs mt-1">Sundays by appointment only</p>
+                  <p className="text-secondary text-xs mt-1">Sundays by appointment only</p>
                 </div>
               </li>
             </ul>
@@ -105,7 +105,7 @@ export default function Footer() {
                 >
                   <img
                     src={img.url}
-                    alt={`Instagram Post ${img.id}`}
+                    alt={img.alt || `Instagram Post ${img.id}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />

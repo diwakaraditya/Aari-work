@@ -1,3 +1,10 @@
+import maggamWork1 from '../assets/Maggamworkimage1.jpeg';
+import earcuff1 from '../assets/EarcuffImage1.jpeg';
+import sareeEmbroidery1 from '../assets/SareeEmbroideryimage1.jpeg';
+import sareeEmbroidery2 from '../assets/SareeEmbroideryimage2.jpeg';
+import threadWork1 from '../assets/Threadworkimage1.jpeg';
+import maggamWork3 from '../assets/Maggamworkimage3.jpeg';
+
 export const categories = [
   {
     id: 'bridal-blouses',
@@ -197,10 +204,10 @@ export const artisanInfo = {
 };
 
 export const instagramGallery = [
-  { id: 1, url: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=300&q=80' },
-  { id: 2, url: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=300&q=80' },
-  { id: 3, url: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=300&q=80' },
-  { id: 4, url: 'https://images.unsplash.com/photo-1610030469668-93535c17b6b3?auto=format&fit=crop&w=300&q=80' },
-  { id: 5, url: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=300&q=80' },
-  { id: 6, url: 'https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=300&q=80' }
+  { id: 1, url: maggamWork1,      alt: 'Maggam Work Embroidery' },
+  { id: 2, url: earcuff1,         alt: 'Aari Earcuff Design' },
+  { id: 3, url: sareeEmbroidery1, alt: 'Saree Embroidery Work 1' },
+  { id: 4, url: sareeEmbroidery2, alt: 'Saree Embroidery Work 2' },
+  { id: 5, url: threadWork1,      alt: 'Thread Work Design' },
+  { id: 6, url: maggamWork3,      alt: 'Maggam Work Design 3' }
 ];
