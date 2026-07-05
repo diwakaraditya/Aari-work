@@ -83,7 +83,7 @@ export default function Footer() {
                 <Clock className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p>Mon - Sat: 10:00 AM - 8:00 PM</p>
-                  <p className="text-secondary text-xs mt-1">Sundays by appointment only</p>
+                  <bp className="text-secondary text-xs mt-1">Sundays by appointment only</p>
                 </div>
               </li>
             </ul>
