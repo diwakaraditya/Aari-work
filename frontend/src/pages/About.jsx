@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Award, Heart, Leaf, Users, MapPin, Sparkles, CheckCircle } from 'lucide-react';
 import { artisanInfo } from '../data/websiteData';
 import ownerImage from "../assets/Dhanashreeimage7.jpeg";
-
+import image5 from "../assets/Dhanashreeimage5.jpeg";
+import image9 from "../assets/Dhanashreeimage9.jpeg";
 const sectionVariants = {
   hidden: { opacity: 0, y: 35 },
   visible: {
@@ -53,7 +54,7 @@ export default function About() {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-[4/5] border border-secondary/25 shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                  src={image9}
                   alt="Embroidery frame details"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -75,8 +76,7 @@ export default function About() {
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[4/5] border border-secondary/25 shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=600&q=80"
-                  alt="Bead work stitching"
+                  src={image5}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
